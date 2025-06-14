@@ -1,7 +1,9 @@
 <template>
-  <ITSystemContent />
+  <div>
+    <!-- Add your content here -->
+  </div>
 </template>
 
 <script setup lang="ts">
-import ITSystemContent from '~/components/ITSystemContent.vue'
+// Add your component logic here
 </script> 
