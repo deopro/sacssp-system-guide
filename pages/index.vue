@@ -114,7 +114,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch, nextTick } from 'vue'
+import { ref, computed, watch, nextTick, onMounted } from 'vue'
 import SearchResults from '../components/SearchResults.vue'
 import ProfConContent from '../components/profcon/ProfConContent.vue'
 import MemberContent from '../components/member/MemberContent.vue'
@@ -138,6 +138,11 @@ const searchResults = ref([] as {
 const activeTab = ref('home')
 const router = useRouter()
 const highlightTerm = ref('')
+const isClient = ref(false)
+
+onMounted(() => {
+  isClient.value = true
+})
 
 const tabs = [
   { id: 'home', title: 'Guide', href: '#home', sectionId: 'home', subtitle: 'System Guide Overview' },
@@ -415,6 +420,8 @@ const sectionIds = sections.reduce((acc, section) => {
 }, {})
 
 const activeContent = computed(() => {
+  if (!isClient.value) return null
+  
   switch (activeTab.value) {
     case 'profcon':
       return ProfConContent
@@ -444,12 +451,15 @@ function scrollToSection(sectionId) {
   }
 }
 
-function onSearch() {
-  const q = searchQuery.value.trim().toLowerCase()
-  if (!q) {
+const onSearch = async () => {
+  if (!isClient.value) return
+  
+  if (!searchQuery.value.trim()) {
     showResults.value = false
     return
   }
+
+  const q = searchQuery.value.trim().toLowerCase()
   // Search in contentIndex
   const results = contentIndex
     .map(item => {
@@ -459,15 +469,15 @@ function onSearch() {
         (item.text && item.text.toLowerCase().includes(q))
       ) {
         let snippet = ''
-        if (matchIdx !== -1) {
-          const start = Math.max(0, matchIdx - 40)
-          const end = Math.min(item.text.length, matchIdx + 40)
-          snippet = item.text.substring(start, end) + (end < item.text.length ? '...' : '')
-        } else {
-          snippet = item.text.substring(0, 80) + (item.text.length > 80 ? '...' : '')
+        if (matchIdx >= 0) {
+          const start = Math.max(0, matchIdx - 50)
+          const end = Math.min(item.text.length, matchIdx + q.length + 50)
+          snippet = item.text.substring(start, end)
+          if (start > 0) snippet = '...' + snippet
+          if (end < item.text.length) snippet = snippet + '...'
         }
         return {
-          id: `${item.tab}-${item.section}`,
+          id: item.section,
           title: item.title,
           snippet,
           link: `#${item.section}`,
@@ -476,9 +486,11 @@ function onSearch() {
       }
       return null
     })
-    .filter((item) => item !== null)
+    .filter(Boolean)
+
   searchResults.value = results
   showResults.value = true
+  highlightTerm.value = q
 }
 
 function onResultSelect(result) {
