@@ -3,10 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "set NODE_OPTIONS=--max-old-space-size=8192 && nuxt build",
-    "dev": "set NODE_OPTIONS=--max-old-space-size=8192 && nuxt dev",
-    "generate": "set NODE_OPTIONS=--max-old-space-size=8192 && nuxt generate",
-    "preview": "set NODE_OPTIONS=--max-old-space-size=8192 && nuxt preview",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
