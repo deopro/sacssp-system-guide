@@ -12,20 +12,19 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import LayoutDefault from '~/layouts/default.vue'
-import SidebarNav from '~/components/SidebarNav.vue'
-import Breadcrumbs from '~/components/Breadcrumbs.vue'
-import ProfConRequirements from '~/components/profcon/Requirements.vue'
-import ProfConRegisterComplaint from '~/components/profcon/RegisterComplaint.vue'
-import ProfConComplaintOfAllegedUnprofessionalConduct from '~/components/profcon/ComplaintOfAllegedUnprofessionalConduct.vue'
-import ProfConAddressInformation from '~/components/profcon/AddressInformation.vue'
-import ProfConComplainantDetails from '~/components/profcon/ComplainantDetails.vue'
-import ProfConIdentifyingParticulars from '~/components/profcon/IdentifyingParticulars.vue'
-import ProfConRespondToComplain from '~/components/profcon/RespondToComplain.vue'
-import ProfConComplaintManagement from '~/components/profcon/ComplaintManagement.vue'
-import ProfConCommunication from '~/components/profcon/Communication.vue'
-import ProfConFAQ from '~/components/profcon/FAQ.vue'
-import ProfConContactInformation from '~/components/profcon/ContactInformation.vue'
+import LayoutDefault from '../layouts/default.vue'
+import SidebarNav from '../components/SidebarNav.vue'
+import Breadcrumbs from '../components/Breadcrumbs.vue'
+import ProfConRequirements from '../components/profcon/Requirements.vue'
+import ProfConRegisterComplaint from '../components/profcon/RegisterComplaint.vue'
+import ProfConComplaintOfAllegedUnprofessionalConduct from '../components/profcon/ComplaintOfAllegedUnprofessionalConduct.vue'
+import ProfConAddressInformation from '../components/profcon/AddressInformation.vue'
+import ProfConComplainantDetails from '../components/profcon/ComplainantDetails.vue'
+import ProfConIdentifyingParticulars from '../components/profcon/IdentifyingParticulars.vue'
+import ProfConRespondToComplain from '../components/profcon/RespondToComplain.vue'
+import ProfConComplaintManagement from '../components/profcon/ComplaintManagement.vue'
+import ProfConCommunication from '../components/profcon/Communication.vue'
+import ProfConFAQ from '../components/profcon/FAQ.vue'
 
 type SectionKey =
   | 'requirements'
@@ -38,7 +37,6 @@ type SectionKey =
   | 'complaintManagement'
   | 'communication'
   | 'faq'
-  | 'contactInformation'
 
 type BreadcrumbItem = { key: string; label: string }
 
@@ -96,7 +94,6 @@ const componentsMap: Record<SectionKey, any> = {
   complaintManagement: ProfConComplaintManagement,
   communication: ProfConCommunication,
   faq: ProfConFAQ,
-  contactInformation: ProfConContactInformation,
 }
 
 function findBreadcrumbs(path: string[], navItems: NavItem[] = nav, acc: BreadcrumbItem[] = []): BreadcrumbItem[] {
