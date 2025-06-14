@@ -269,6 +269,14 @@ h6 { font-size: 0.875rem; }
   box-shadow: 0 2px 12px rgba(7, 92, 9, 0.10);
   background: #f6f8fa;
 }
+.figure2 {
+  max-width: 80%;
+  min-width: 80px;
+  width: 80%;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(7, 92, 9, 0.10);
+  background: #f6f8fa;
+}
 .figure-caption {
   font-size: 0.95rem;
   color: #666;

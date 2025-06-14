@@ -2,41 +2,46 @@
   <div class="content-section">
     <!-- My Finances -->
     <div id="finance-my-finances" class="section">
-      <h2>5.1 My Finances</h2>
+      <h2>My Finances</h2>
       <p>To pay an invoice, navigate to Finances and click on "View" button for the invoice you wish to pay for.</p>
-      <div class="card">
-        <div class="image-placeholder">
-          <span>Image placeholder</span>
+              <div class="figure-container">
+          <img src="/media/finance1.png" alt="aying Invoices illustration" class="figure" />
+          <div class="figure-caption">Figure: Paying Invoices</div>
         </div>
-        <p class="caption">Figure: Pay Invoice</p>
-      </div>
     </div>
 
     <!-- View and Pay Invoice -->
     <div id="finance-pay-invoice" class="section">
-      <h2>5.2 View and Pay Invoice</h2>
+      <h2>View and Pay Invoice</h2>
       <p>Select the "Pay with Ozow" button on the below screen to pay an invoice</p>
-      <div class="card">
-      </div>
+ <div class="figure-container">
+          <img src="/media/finance2.png" alt="View and Pay Invoices illustration" class="figure" />
+          <div class="figure-caption">Figure: View and Pay Invoices Payment</div>
+        </div>
     </div>
 
     <!-- Pay with Ozow -->
     <div id="finance-pay-ozow" class="section">
-      <h2>5.3 Pay with Ozow screen</h2>
+      <h2>Pay with Ozow screen</h2>
       <p>Then payment gateway screen for Ozow will be displayed as per below, select any back of your choice, follow prompts and complete the payment. There is also option to cancel payment (Abort payment transaction) then pay at later stage</p>
-      <div class="image-grid">
-        <div class="card">
+       <div class="figure-container">
+          <img src="/media/finance3.png" alt="Pay with Ozow illustration" class="figure2" />
+          <div class="figure-caption">Figure: Pay with Ozow</div>
         </div>
-        <div class="card">
+              <p>If for some reason you decide not to proceed with the payment, you may cancel the process.</p>
+       <div class="figure-container">
+          <img src="/media/finance4.png" alt="Cancel payment illustration" class="figure2" />
+          <div class="figure-caption">Figure: Cancel payment</div>
         </div>
-      </div>
     </div>
 
     <!-- View Statement -->
     <div id="finance-view-statement" class="section">
-      <h2>5.4 View Statement</h2>
-      <div class="card">
-      </div>
+      <h2>View Statement</h2>
+       <div class="figure-container">
+          <img src="/media/finance5.png" alt="View Statement illustration" class="figure" />
+          <div class="figure-caption">Figure: View Statement</div>
+        </div>
     </div>
   </div>
 </template>

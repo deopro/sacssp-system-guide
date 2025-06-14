@@ -2,49 +2,55 @@
   <div class="content-section">
     <!-- New Applications List -->
     <div id="admin-new-applications" class="scroll-mt-20">
-      <h2 class="text-2xl font-bold mb-4">6.1 New Applications List</h2>
+      <h2 class="text-2xl font-bold mb-4">New Applications List</h2>
       <p class="mb-4">View and manage new applications.</p>
       <div class="bg-gray-100 p-4 rounded-lg">
-        <div class="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center">
-          <span class="text-gray-500">Image placeholder</span>
+        <p class="mb-4">Once logged as Admin (Council Registration Office) you will be redirected to dashboard with list of all applications with different statuses (New, Approved, and Rejected) select View Profile</p>
+     <div class="figure-container">
+                <img src="/media/admin1.png" alt="View and manage new applications illustration" class="figure2" />
+          <div class="figure-caption">Figure: View and manage new applications</div>
         </div>
-        <p class="text-center mt-2 text-sm text-gray-600">Figure: New Applications List</p>
       </div>
     </div>
 
     <!-- Applicant's Profile -->
     <div id="admin-applicant-profile" class="scroll-mt-20">
-      <h2 class="text-2xl font-bold mb-4">6.2 Applicant's Profile</h2>
+      <h2 class="text-2xl font-bold mb-4">Applicant's Profile</h2>
+
+      <p>Applicant’s profile opened, Council Registration Officer has access to Approve/reject the application, edit applicant’s profile (user details) as well as to Update Membership status.</p>
+      <p>Registration Officer will also have access to browse through all Tabs (Address, Documents, Professions, Qualifications and Finances) to confirm if all the required details have been captured accordingly before approving the application.</p>
       <p class="mb-4">View and manage applicant profiles.</p>
       <div class="bg-gray-100 p-4 rounded-lg">
-        <div class="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center">
-          <span class="text-gray-500">Image placeholder</span>
+      <div class="figure-container">
+                <img src="/media/admin2.png" alt="Applicant's Profile illustration" class="figure2" />
+          <div class="figure-caption">Figure: Applicant's Profile</div>
         </div>
-        <p class="text-center mt-2 text-sm text-gray-600">Figure: Applicant's Profile</p>
       </div>
     </div>
 
     <!-- Approve/Reject -->
     <div id="admin-approve-reject" class="scroll-mt-20">
-      <h2 class="text-2xl font-bold mb-4">6.3 Approve/Reject</h2>
+      <h2 class="text-2xl font-bold mb-4">Approve/Reject</h2>
       <p class="mb-4">Approve or reject applications.</p>
       <div class="bg-gray-100 p-4 rounded-lg">
-        <div class="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center">
-          <span class="text-gray-500">Image placeholder</span>
+        <p>After the Registration office has assessed the application they can then either approve or reject, the Applicant will be sent notification on either selection then Application Status will be updated from New to Approved or Rejected. </p>
+        <div class="figure-container">
+                <img src="/media/admin3.png" alt=">Approve or reject applications illustration" class="figure2" />
+          <div class="figure-caption">Figure: Approve or reject applications</div>
         </div>
-        <p class="text-center mt-2 text-sm text-gray-600">Figure: Approve/Reject</p>
       </div>
     </div>
 
     <!-- Update Membership Status -->
     <div id="admin-update-membership" class="scroll-mt-20">
-      <h2 class="text-2xl font-bold mb-4">6.4 Update Membership Status</h2>
+      <h2 class="text-2xl font-bold mb-4">Update Membership Status</h2>
       <p class="mb-4">Update membership status for applicants.</p>
       <div class="bg-gray-100 p-4 rounded-lg">
-        <div class="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center">
-          <span class="text-gray-500">Image placeholder</span>
+        <p>Membeship status can be updated by registration Office when ever requested with below options and notes can be added as well.</p>
+        <div class="figure-container">
+                <img src="/media/admin4.png" alt=">Update Membership Status illustration" class="figure2" />
+          <div class="figure-caption">Figure: Update Membership Status</div>
         </div>
-        <p class="text-center mt-2 text-sm text-gray-600">Figure: Update Membership Status</p>
       </div>
     </div>
 
@@ -53,10 +59,11 @@
       <h2 class="text-2xl font-bold mb-4">6.5 Allocate Payment to Invoice</h2>
       <p class="mb-4">Allocate payments to invoices.</p>
       <div class="bg-gray-100 p-4 rounded-lg">
-        <div class="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center">
-          <span class="text-gray-500">Image placeholder</span>
+       <p>Council Financial Officer will have access to allocate all unalocated payments to relevant accounts buy selecting Finance, then Invoices and chose any invoice from the list to allocate to.</p>
+       <div class="figure-container">
+                <img src="/media/admin5.png" alt=">Allocate payments to invoices illustration" class="figure2" />
+          <div class="figure-caption">Figure: Allocate payments to invoices</div>
         </div>
-        <p class="text-center mt-2 text-sm text-gray-600">Figure: Allocate Payment to Invoice</p>
       </div>
     </div>
   </div>

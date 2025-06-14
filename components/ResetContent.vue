@@ -1,7 +1,7 @@
 <template>
   <section id="reset" class="section">
     <h2>Reset Password</h2>
-    <p>Reset your password by clicking “Forgot your password” link on the login page.</p>
+    <p>To reset your password, click on the “Forgot your password” link on the login page. Enter the email address associated with your account, click the "Reset Password" button, and follow the instructions sent to your email.</p>
     <div class="figure-container">
       <img src="/media/forgot-password.png" alt="Forgot password illustration" class="figure" />
       <div class="figure-caption">Figure: Password reset</div>

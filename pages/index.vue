@@ -199,7 +199,7 @@ const contentIndex = [
     section: 'profcon-register-complaint',
     title: 'Register a Complaint',
     text: `To initiate the complaint process, you need to register the complaint online.
-Start the Professional Conduct Online Complaint Registration from your web browser by accessing the following web address: https://qa.sacssponline.co.za/profcon/registercomplainant. You will be presented with the initial complaint form.
+Start the Professional Conduct Online Complaint Registration from your web browser by accessing the following web address: https://sacssponline.co.za/profcon/registercomplainant. You will be presented with the initial complaint form.
 
 i. Complaint Of Alleged Unprofessional Conduct
 Begin by filling in your personal details on the first page of the complaint form. Once completed, click the "Save" button to proceed.
@@ -230,7 +230,7 @@ Upon successful submission, the system will confirm that the complaint has been 
     section: 'profcon-review-complaint-status',
     title: 'Review Complaint Status',
     text: `After submitting your complaint, you can check its status online.
-Start the Professional Conduct Complaint Review Online from your web browser by accessing the following web address: https://qa.sacssponline.co.za/profcon/reviewcomplain.
+Start the Professional Conduct Complaint Review Online from your web browser by accessing the following web address: https://sacssponline.co.za/profcon/reviewcomplain.
 Enter the unique Reference Number you received upon submission into the designated field, then click the "Search" button.
 The system will then display the status of your submitted complaint. Based on the status, you may have options such as appealing the decision if applicable.`
   },
@@ -257,7 +257,7 @@ Navigate to the "Preliminary investigation" tab. Fill in the investigation form 
     section: 'profcon-submitting-appeal',
     title: 'Submitting an Appeal',
     text: `If you disagree with a decision made regarding your complaint, you may have the option to appeal.
-Start the Professional Conduct Online Appeal from your web browser by accessing the following web address: https://qa.sacssponline.co.za/ProfCon/Appeals. You will be presented with a form.
+Start the Professional Conduct Online Appeal from your web browser by accessing the following web address: https://sacssponline.co.za/ProfCon/Appeals. You will be presented with a form.
 1. Enter the Reference Number of the complaint you wish to appeal, then click "Search".
 2. The system will display the complaint status. If an appeal is possible (e.g., the matter was closed as shown in the example), an "Appeal Decision" button should be available. Click this button to proceed.
 3. Provide a clear and concise reason for your appeal in the text area provided. Once you have stated your grounds for appeal, click "Save".
