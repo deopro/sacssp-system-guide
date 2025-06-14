@@ -4,7 +4,12 @@ export default defineNuxtConfig({
   nitro: {
     compatibilityDate: '2024-03-13',
     minify: true,
-    compressPublicAssets: true
+    compressPublicAssets: true,
+    prerender: {
+      crawlLinks: true,
+      routes: ['/'],
+      ignore: ['/api/**']
+    }
   },
   routeRules: {
     '/**': { 
@@ -38,5 +43,7 @@ export default defineNuxtConfig({
   },
   css: [
     '~/assets/css/main.css'
-  ]
+  ],
+  ssr: true,
+  target: 'static'
 }) 
